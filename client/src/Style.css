@@ -1,38 +1,112 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto+Slab:wght@500&family=Source+Serif+Pro&display=swap");
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Roboto Slab', serif;
+font-family: 'Source Serif Pro', serif; */
+
+:root {
+  --heading-color: #0c0d0e;
+  --paragraph-color: #242729;
+  --primary-color: #32cd32;
+  --primary-color-hover: #2db82d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--heading-color);
+  font-family: "Roboto Slab", serif;
+  margin-top: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  color: var(--paragraph-color);
+  font-family: "Source Serif Pro", serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+b {
+  color: var(--primary-color);
+}
+
+i {
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
   color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: var(--primary-color-hover);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+button:focus {
+  background-color: var(--primary-color-hover);
+  border: none;
+  outline: none;
+}
+
+footer {
+  text-align: center;
+}
+
+.link-class {
+  display: inline-block;
+  margin: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.link-class:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.link-class:focus {
+  background-color: var(--primary-color-hover);
+  border: none;
+  outline: none;
+}
+
+.login-box {
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.73);
+  border-radius: 10px;
+  padding: 80px 40px;
+}
+
+.form-control:focus {
+  border: none;
+  border-left: 8px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.section-margin {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+@media (max-width: 767px) {
+  .section-margin {
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 }
