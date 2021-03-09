@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function adminLogin() {
+export default function LoginBox(props) {
+
+let msg = props.msg;
+
   return (
-    <div className="container login-box">
+    <div className="container login-box section-margin">
       <form>
         <div className="mb-3">
           <label for="exampleInputEmail1" className="form-label">
@@ -28,7 +31,7 @@ export default function adminLogin() {
         </div>
         <div className="row">
           <div className="col-xl-6 col-lg-6 col-md-6">
-            <button type="submit">Admin Login</button>
+            <button type="submit">{ msg } Login</button>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6">
             <Link to="/" className="link-class">Home</Link>
