@@ -4,10 +4,8 @@ font-family: 'Roboto Slab', serif;
 font-family: 'Source Serif Pro', serif; */
 
 :root {
-  --heading-color: #0c0d0e;
-  --paragraph-color: #242729;
-  --primary-color: #32cd32;
-  --primary-color-hover: #2db82d;
+  --black-color: #0c0d0e;
+  --white-color: rgb(248, 241, 241);
 }
 
 h1,
@@ -15,7 +13,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: var(--heading-color);
+  color: var(--black-color);
   font-family: "Roboto Slab", serif;
   margin-top: 10px;
   text-align: center;
@@ -25,7 +23,7 @@ p {
   font-size: 18px;
   font-weight: 300;
   line-height: 28px;
-  color: var(--paragraph-color);
+  color: var(--black-color);
   font-family: "Source Serif Pro", serif;
 }
 
@@ -33,16 +31,12 @@ a {
   text-decoration: none;
 }
 
-b {
-  color: var(--primary-color);
-}
-
 i {
-  color: var(--primary-color);
+  color: var(--black-color);
 }
 
 button {
-  background-color: var(--primary-color);
+  background-color: var(--black-color);
   color: white;
   font-size: 16px;
   font-weight: 700;
@@ -52,13 +46,16 @@ button {
 }
 
 button:hover {
-  background-color: var(--primary-color-hover);
+  color: blue;
 }
 
 button:focus {
-  background-color: var(--primary-color-hover);
   border: none;
   outline: none;
+}
+
+header {
+  box-shadow: 0px 0px 10px var(--black-color);
 }
 
 footer {
@@ -68,7 +65,7 @@ footer {
 .link-class {
   display: inline-block;
   margin: 10px;
-  background-color: var(--primary-color);
+  background-color: var(--black-color);
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -76,25 +73,20 @@ footer {
   border-radius: 10px;
 }
 
-.link-class:hover {
-  background-color: var(--primary-color-hover);
-}
-
 .link-class:focus {
-  background-color: var(--primary-color-hover);
   border: none;
   outline: none;
 }
 
 .login-box {
-  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.73);
+  box-shadow: 0px 0px 9px 1px var(--black-color);
   border-radius: 10px;
   padding: 80px 40px;
 }
 
 .form-control:focus {
   border: none;
-  border-left: 8px solid var(--primary-color);
+  border-left: 8px solid var(--black-color);
   border-radius: 10px;
   box-shadow: none;
 }
@@ -109,4 +101,27 @@ footer {
     margin-top: 70px;
     margin-bottom: 70px;
   }
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coln img {
+  width: 30;
+  height: 24;
+  border-radius: 50%;
+  margin-top: 18px;
+}
+
+.form-check {
+  color: var(--black-color);
+  margin-top: 20px;
+}
+
+.form-check .checked {
+  outline: none;
+  color: var(--white-color);
+  background-color: var(--black-color);
 }

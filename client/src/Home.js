@@ -15,14 +15,14 @@ export default function Home() {
   else {
   return (
     <>
-      <Header headingTitle = "Home Page" />
+      <Header />
       <div className="section-margin">
         <center>
-          <Link to="/userLogin" class="link-class">
-            User Login
+          <Link to="/signup" class="link-class">
+            SignUp
           </Link>
-          <Link to="/adminLogin" class="link-class">
-            Admin Login
+          <Link to="/signin" class="link-class">
+            SignIn
           </Link>
         </center>
       </div>
