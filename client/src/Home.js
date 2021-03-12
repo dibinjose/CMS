@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Sample from "./images/sample.jpg";
 
 export default function Home() {
 
@@ -15,7 +16,7 @@ export default function Home() {
   else {
   return (
     <>
-      <Header />
+      <Header darkModeDisable = {true} proPic = {Sample} />
       <div className="section-margin">
         <center>
           <Link to="/signup" class="link-class">
